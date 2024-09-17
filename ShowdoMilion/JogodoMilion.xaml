@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ShowdoMilion.JogodoMilion">
 
-    <Grid>
+    <Grid BackgroundColor="#02416d">
      <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*"/>
         <ColumnDefinition Width="*"/>
@@ -21,16 +21,27 @@
         <RowDefinition Height="*"/>
     </Grid.RowDefinitions>
     
-
-        <Label  
-                HorizontalTextAlignment="Center"
-                FontSize="18"
-                TextColor="Black"
-                Grid.Row="2"
+        <Image  Source="imagejogo.png"
+                Aspect="AspectFill"
+                Grid.Row="0"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"/>
 
-        <Button 
+         <Frame  BackgroundColor="White"
+                 Opacity=".6"
+                 CornerRadius="20"
+                 BorderColor="Black"
+                 Grid.Row="1"
+                 Grid.ColumnSpan="3">
+
+        <Label  Text="Pergunta..."
+                HorizontalTextAlignment="Center"
+                FontSize="18"
+                TextColor="Black"/>
+
+        </Frame>
+
+        <Button Text="Resposta 1"
                 BorderWidth="2"
                 BackgroundColor="White"
                 TextColor="Black"
@@ -41,8 +52,7 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="3"/>  
     
-        <Button 
-                
+        <Button Text="Resposta 2"
                 BorderWidth="2"
                 TextColor="Black"
                 BackgroundColor="White"
@@ -53,7 +63,7 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="3"/>
 
-        <Button 
+        <Button Text="Resposta 3"
                 BorderWidth="2"
                 TextColor="Black"
                 BackgroundColor="White"
@@ -64,7 +74,7 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="3"/> 
 
-        <Button 
+        <Button Text="Resposta 4"
                 BorderWidth="2"
                 TextColor="Black"
                 BackgroundColor="White"
@@ -75,7 +85,7 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="3"/>
 
-        <Button 
+        <Button Text="Resposta 5"
                 BorderWidth="2"
                 TextColor="Black"
                 BackgroundColor="White"
