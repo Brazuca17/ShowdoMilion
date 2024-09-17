@@ -1,10 +1,10 @@
-﻿namespace ShowdoMilion;
+namespace ShowdoMilion;
 
-public partial class MainPage : ContentPage
+public partial class JogodoMilion : ContentPage
 {
 
 
-	public MainPage()
+	public JogodoMilion()
 	{
 		InitializeComponent();
 	}
@@ -15,4 +15,3 @@ public partial class MainPage : ContentPage
       Application.Current.MainPage = new JogodoMilion();
 	}
 }
-

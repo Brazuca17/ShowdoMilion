@@ -56,13 +56,17 @@ public  class Questao
         if (RespostaCorreta == respostaCerta)
         {
             var btn = QualButton(qualbot);
-                btn.BackgroundColor = Colors.Green;
+            btn backgrounColor = Colors.Green;
             return true;
         }
-        else
+        else 
         {
-            return false;
-        }
+            var btnCorreto = QualButton(RespostaCorreta);
+            var btnIncorreto = QualButton(respostaCerta);
+                btnCorreto.BackgroundColor = Colors.Yellow;
+                btnIncorreto.BackgroundColor = Colors.Red;
+                return false;
+        } 
     }
 
     private Button QualButton(int qualbot)

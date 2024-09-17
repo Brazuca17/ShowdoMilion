@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShowdoMilion.JogodoMilion">
+
+    <Grid>
+     <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+
+    <Grid.RowDefinitions>
+        <RowDefinition Height="250"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+    </Grid.RowDefinitions>
+    
+
+        <Label  
+                HorizontalTextAlignment="Center"
+                FontSize="18"
+                TextColor="Black"
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/>
+
+        <Button 
+                BorderWidth="2"
+                BackgroundColor="White"
+                TextColor="Black"
+                Margin="0,0,0,10"
+                FontSize="18"
+                BorderColor="Black"
+                Grid.Row="2"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/>  
+    
+        <Button 
+                
+                BorderWidth="2"
+                TextColor="Black"
+                BackgroundColor="White"
+                Margin="0,0,0,10"
+                FontSize="18"
+                BorderColor="Black"
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/>
+
+        <Button 
+                BorderWidth="2"
+                TextColor="Black"
+                BackgroundColor="White"
+                Margin="0,0,0,10"
+                FontSize="18"
+                BorderColor="Black"
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/> 
+
+        <Button 
+                BorderWidth="2"
+                TextColor="Black"
+                BackgroundColor="White"
+                Margin="0,0,0,10"
+                FontSize="18"
+                BorderColor="Black"
+                Grid.Row="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/>
+
+        <Button 
+                BorderWidth="2"
+                TextColor="Black"
+                BackgroundColor="White"
+                Margin="0,0,0,10"
+                FontSize="18"
+                BorderColor="Black"
+                Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/> 
+    
+    
+        <Button Text ="Cartas"
+                BorderWidth="2"
+                Padding =".9"
+                TextColor="Black"
+                BackgroundColor="White"
+                Margin="0,0,0,10"
+                FontSize="18"
+                BorderColor="Black"
+                Grid.Row="7"
+                Grid.Column="0"/>
+
+        <Button Text="Retirada 2"
+                BorderWidth="2"
+                Padding =".9"
+                TextColor="Black"
+                BackgroundColor="White"
+                Margin="0,0,0,10"
+                FontSize="18"
+                BorderColor="Black"
+                Grid.Row="7"
+                Grid.Column="1"/>
+
+        <Button Text="Universitários"
+                BorderWidth="2"
+                Padding =".9"
+                TextColor="Black"
+                BackgroundColor="White"
+                Margin="0,0,0,10"
+                FontSize="18"
+                BorderColor="Black"
+                Grid.Row="7"
+                Grid.Column="2"/>
+
+
+    
+    </Grid>
+
+</ContentPage>
