@@ -25,7 +25,7 @@
     
     <Button Text="Iniciar"
             Clicked="IrJogo"
-            Background="#c09237"
+            Background="#034a8d"
             BorderColor="Black"
             BorderWidth="2"
             CornerRadius="20"

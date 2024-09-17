@@ -3,7 +3,7 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ShowdoMilion.JogodoMilion">
 
-    <Grid BackgroundColor="#02416d">
+    <Grid BackgroundColor="#0b0319">
      <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*"/>
         <ColumnDefinition Width="*"/>
