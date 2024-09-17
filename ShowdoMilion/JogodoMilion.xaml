@@ -27,7 +27,7 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="3"/>
 
-         <Frame  BackgroundColor="White"
+         <Frame  
                  Opacity=".6"
                  CornerRadius="20"
                  BorderColor="Black"
@@ -99,7 +99,7 @@
     
         <Button Text ="Cartas"
                 BorderWidth="2"
-                Padding =".9"
+                Padding =".12"
                 TextColor="Black"
                 BackgroundColor="White"
                 Margin="0,0,0,10"
@@ -108,9 +108,9 @@
                 Grid.Row="7"
                 Grid.Column="0"/>
 
-        <Button Text="Retirada 2"
+        <Button Text="Retira 2"
                 BorderWidth="2"
-                Padding =".9"
+                Padding =".12"
                 TextColor="Black"
                 BackgroundColor="White"
                 Margin="0,0,0,10"
@@ -121,7 +121,7 @@
 
         <Button Text="Universitários"
                 BorderWidth="2"
-                Padding =".9"
+                Padding =".12"
                 TextColor="Black"
                 BackgroundColor="White"
                 Margin="0,0,0,10"
