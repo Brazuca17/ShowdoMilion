@@ -3,7 +3,8 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="ShowdoMilion.JogodoMilion">
 
-    <Grid BackgroundColor="#0b0319">
+    <Grid BackgroundColor="#0b0319"
+          Padding="10">
      <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*"/>
         <ColumnDefinition Width="*"/>
@@ -12,13 +13,13 @@
 
     <Grid.RowDefinitions>
         <RowDefinition Height="250"/>
+        <RowDefinition Height="70"/>
         <RowDefinition Height="*"/>
         <RowDefinition Height="*"/>
         <RowDefinition Height="*"/>
         <RowDefinition Height="*"/>
         <RowDefinition Height="*"/>
-        <RowDefinition Height="*"/>
-        <RowDefinition Height="*"/>
+        <RowDefinition Height="70"/>
     </Grid.RowDefinitions>
     
         <Image  Source="imagejogo.png"
@@ -28,7 +29,7 @@
                 Grid.ColumnSpan="3"/>
 
          <Frame  
-                 Opacity=".6"
+                 Background="#77FFFFFF"
                  CornerRadius="20"
                  BorderColor="Black"
                  Grid.Row="1"
