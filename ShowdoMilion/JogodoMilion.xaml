@@ -4,7 +4,7 @@
              x:Class="ShowdoMilion.JogodoMilion">
 
     <Grid BackgroundColor="#0b0319"
-          Padding="10">
+          Padding="14">
      <Grid.ColumnDefinitions>
         <ColumnDefinition Width="*"/>
         <ColumnDefinition Width="*"/>
@@ -31,7 +31,7 @@
          <Frame  
                  Background="#77FFFFFF"
                  CornerRadius="20"
-                 BorderColor="Black"
+                 BorderColor="#7516d9"
                  Grid.Row="1"
                  Grid.ColumnSpan="3">
 
@@ -44,11 +44,11 @@
 
         <Button Text="Resposta 1"
                 BorderWidth="2"
-                BackgroundColor="White"
+                BackgroundColor="#7916b8"
                 TextColor="Black"
                 Margin="0,0,0,10"
                 FontSize="18"
-                BorderColor="Black"
+                BorderColor="White"
                 Grid.Row="2"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"/>  
@@ -56,10 +56,10 @@
         <Button Text="Resposta 2"
                 BorderWidth="2"
                 TextColor="Black"
-                BackgroundColor="White"
+                BackgroundColor="#7916b8"
                 Margin="0,0,0,10"
                 FontSize="18"
-                BorderColor="Black"
+                BorderColor="White"
                 Grid.Row="3"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"/>
@@ -67,10 +67,10 @@
         <Button Text="Resposta 3"
                 BorderWidth="2"
                 TextColor="Black"
-                BackgroundColor="White"
+                BackgroundColor="#7916b8"
                 Margin="0,0,0,10"
                 FontSize="18"
-                BorderColor="Black"
+                BorderColor="White"
                 Grid.Row="4"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"/> 
@@ -78,10 +78,10 @@
         <Button Text="Resposta 4"
                 BorderWidth="2"
                 TextColor="Black"
-                BackgroundColor="White"
+                BackgroundColor="#7916b8"
                 Margin="0,0,0,10"
                 FontSize="18"
-                BorderColor="Black"
+                BorderColor="White"
                 Grid.Row="5"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"/>
@@ -89,10 +89,10 @@
         <Button Text="Resposta 5"
                 BorderWidth="2"
                 TextColor="Black"
-                BackgroundColor="White"
+                BackgroundColor="#7916b8"
                 Margin="0,0,0,10"
                 FontSize="18"
-                BorderColor="Black"
+                BorderColor="White"
                 Grid.Row="6"
                 Grid.Column="0"
                 Grid.ColumnSpan="3"/> 
@@ -102,32 +102,32 @@
                 BorderWidth="2"
                 Padding =".12"
                 TextColor="Black"
-                BackgroundColor="White"
+                BackgroundColor="#7916b8"
                 Margin="0,0,0,10"
                 FontSize="18"
-                BorderColor="Black"
+                BorderColor="White"
                 Grid.Row="7"
                 Grid.Column="0"/>
 
         <Button Text="Retira 2"
                 BorderWidth="2"
-                Padding =".12"
+                Padding ="12"
                 TextColor="Black"
-                BackgroundColor="White"
+                BackgroundColor="#7916b8"
                 Margin="0,0,0,10"
                 FontSize="18"
-                BorderColor="Black"
+                BorderColor="White"
                 Grid.Row="7"
                 Grid.Column="1"/>
 
         <Button Text="Universitários"
                 BorderWidth="2"
-                Padding =".12"
+                Padding ="12"
                 TextColor="Black"
-                BackgroundColor="White"
+                BackgroundColor="#7916b8"
                 Margin="0,0,0,10"
                 FontSize="18"
-                BorderColor="Black"
+                BorderColor="White"
                 Grid.Row="7"
                 Grid.Column="2"/>
 

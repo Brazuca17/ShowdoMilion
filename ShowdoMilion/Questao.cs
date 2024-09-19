@@ -32,7 +32,7 @@ public  class Questao
         botao5 = but5;
     }
 
-     public void ConfigurarTelaDesenho(Label lb, Button but1, Button but2,Button but3,Button but4,Button but5)
+    public void ConfigurarTelaDesenho(Label lb, Button but1, Button but2,Button but3,Button but4,Button but5)
     {
         labelPergunta = lb;
         botao1 = but1;
@@ -55,8 +55,8 @@ public  class Questao
     {
         if (RespostaCorreta == respostaCerta)
         {
-            var btn = QualButton(qualbot);
-            btn backgrounColor = Colors.Green;
+            var btn = QualButton(respostaCerta);
+            btn.BackgrounColor = Colors.Green;
             return true;
         }
         else 
