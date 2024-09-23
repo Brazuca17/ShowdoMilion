@@ -28,14 +28,28 @@ public class Gerenciador
         var Quest1 = new Questao();
         Quest1.Nivel= 1;
         Quest1.ConfigurarTelaDesenho(labelPerg, bntResp01, bntResp02, bntResp03, bntResp04, bntResp05);
-        Quest1.Pergunta = "quanto é ?";
-        Quest1.Resposta1 = "...";
-        Quest1.Resposta2 = "...";
-        Quest1.Resposta3 = "...";
-        Quest1.Resposta4 = "...";
-        Quest1.Resposta5 = "...";
-        Quest1.RespostaCorreta = 3;
+        Quest1.Pergunta = "que dia tiradente morreu";
+        Quest1.Resposta1 = "17 abril";
+        Quest1.Resposta2 = "21 abril";
+        Quest1.Resposta3 = "15 abril";
+        Quest1.Resposta4 = "12 abril";
+        Quest1.Resposta5 = "12 abril";
+        Quest1.RespostaCorreta = 2;
         listaQuestoes.Add(Quest1);
+
+        var Quest2 = new Questao();
+        Quest2.Nivel= 1;
+        Quest2.ConfigurarTelaDesenho(labelPerg, bntResp01, bntResp02, bntResp03, bntResp04, bntResp05);
+        Quest2.Pergunta = "sadjioasjd";
+        Quest2.Resposta1 = "asdsada";
+        Quest2.Resposta2 = "...";
+        Quest2.Resposta3 = "...";
+        Quest2.Resposta4 = "...";
+        Quest2.Resposta5 = "...";
+        Quest2.RespostaCorreta = 3;
+        listaQuestoes.Add(Quest2);
+
+
         
 
 
