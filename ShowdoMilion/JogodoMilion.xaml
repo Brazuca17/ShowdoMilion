@@ -35,14 +35,16 @@
                  Grid.Row="1"
                  Grid.ColumnSpan="3">
 
-        <Label  Text="Pergunta..."
+        <Label 
+                x:Name="labelPergunta"
                 HorizontalTextAlignment="Center"
                 FontSize="18"
                 TextColor="Black"/>
 
         </Frame>
 
-        <Button Text="Resposta 1"
+        <Button x:Name="botao01"
+                Clicked="OnBtnResposta01Clicked"
                 BorderWidth="2"
                 BackgroundColor="#7916b8"
                 TextColor="Black"
@@ -53,7 +55,8 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="3"/>  
     
-        <Button Text="Resposta 2"
+        <Button x:Name="botao02"
+                Clicked="OnBtnResposta02Clicked"
                 BorderWidth="2"
                 TextColor="Black"
                 BackgroundColor="#7916b8"
@@ -64,7 +67,8 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="3"/>
 
-        <Button Text="Resposta 3"
+        <Button x:Name="botao03"
+                Clicked="OnBtnResposta03Clicked"
                 BorderWidth="2"
                 TextColor="Black"
                 BackgroundColor="#7916b8"
@@ -75,7 +79,8 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="3"/> 
 
-        <Button Text="Resposta 4"
+        <Button x:Name="botao04"
+                Clicked="OnBtnResposta04Clicked"
                 BorderWidth="2"
                 TextColor="Black"
                 BackgroundColor="#7916b8"
@@ -86,7 +91,8 @@
                 Grid.Column="0"
                 Grid.ColumnSpan="3"/>
 
-        <Button Text="Resposta 5"
+        <Button x:Name="botao05"
+                Clicked="OnBtnResposta05Clicked"
                 BorderWidth="2"
                 TextColor="Black"
                 BackgroundColor="#7916b8"

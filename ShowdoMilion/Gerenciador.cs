@@ -1,3 +1,5 @@
+using Windows.Graphics.Printing.Workflow;
+
 namespace ShowdoMilion;
 
 public class Gerenciador
@@ -5,25 +7,39 @@ public class Gerenciador
     List<Questao>listaQuestoes = new List<Questao>();
     List<int>listaQuestoesRespondidas = new List<int>();
     Questao QuestaoCorrente;
+    public int pontuação {get; private set;}
+    int NivelAtual = 0;
+    
+    void Inicializar()
+    {
+        pontuação = 0;
+        NivelAtual = 1;
+        ProximaQuestao();
+    }
 
 
-    public Gerenciador (Label labelPerg, Button bntResp01, Button bntResp02, Button bntResp03, Button bntResp04, Button bntResp05)
+    public Gerenciador(Label labelPerg, Button bntResp01, Button bntResp02, Button bntResp03, Button bntResp04, Button bntResp05)
     {
         CriaPergunta(labelPerg, bntResp01, bntResp02, bntResp03, bntResp04, bntResp05);  
     }
 
-    void CriaPergunta(Label labelPerg, Button bntResp01, Button bntResp02, Button bntRespo03, Button bntRespo04, Button bntResp5)
+    void CriaPergunta(Label labelPerg, Button bntResp01, Button bntResp02, Button bntResp03, Button bntResp04, Button bntResp05)
     {
         var Quest1 = new Questao();
-        Quest1.ConfigurarTelaDesenho(labelPerg, btnResp01, btnResp02, btnResp03, btnResp04, btnResp05);
+        Quest1.Nivel= 1;
+        Quest1.ConfigurarTelaDesenho(labelPerg, bntResp01, bntResp02, bntResp03, bntResp04, bntResp05);
         Quest1.Pergunta = "quanto é ?";
         Quest1.Resposta1 = "...";
         Quest1.Resposta2 = "...";
         Quest1.Resposta3 = "...";
         Quest1.Resposta4 = "...";
         Quest1.Resposta5 = "...";
-        Quest1.RespostaCorreta = "3";
+        Quest1.RespostaCorreta = 3;
         listaQuestoes.Add(Quest1);
+        
+
+
+        ProximaQuestao();
     }
 
     public async void VerificarCorreta(int RR)
@@ -31,7 +47,14 @@ public class Gerenciador
         if (QuestaoCorrente.VerificarResposta(RR))
         {
             await Task.Delay(1000);
+            AdicionaPontuacao(NivelAtual);
+            NivelAtual ++;
             ProximaQuestao();
+        }
+        else
+        {
+            await App.Current.MainPage.DisplayAlert("FIM!", "VOCÊ ERROU", "OK!");
+            Inicializar();
         }
     }
 
@@ -44,4 +67,29 @@ public class Gerenciador
         QuestaoCorrente = listaQuestoes[NumeroAle];
         QuestaoCorrente.Desenhar();
     }
+
+    void AdicionaPontuacao(int n)
+    {
+        if ( n==1)
+            pontuação = 1000;
+        else if ( n==2)
+            pontuação = 2000;
+        else if ( n == 3)
+            pontuação = 5000;
+        else if ( n==4)
+            pontuação = 10000;
+        else if ( n==5)
+            pontuação = 20000;
+        else if ( n==6)
+            pontuação = 50000;
+        else if ( n==7)
+            pontuação = 100000;
+        else if ( n==8)
+            pontuação = 200000;
+        else if ( n==9)
+            pontuação = 500000;
+        else 
+            pontuação = 1000000;
+    }
+
 }

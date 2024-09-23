@@ -3,7 +3,7 @@ namespace ShowdoMilion;
 public  class Questao
 {
     public string Pergunta;
-    public string Resposta1; 
+    public string Resposta1;
     public string Resposta2;
     public string Resposta3;
     public string Resposta4;
@@ -56,7 +56,7 @@ public  class Questao
         if (RespostaCorreta == respostaCerta)
         {
             var btn = QualButton(respostaCerta);
-            btn.BackgrounColor = Colors.Green;
+            btn.BackgroundColor = Colors.Green;
             return true;
         }
         else 
