@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ShowdoMilion.JogodoMilion">
+
+    <Grid BackgroundColor="#0b0319"
+          Padding="14">
+     <Grid.ColumnDefinitions>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+        <ColumnDefinition Width="*"/>
+    </Grid.ColumnDefinitions>
+
+    <Grid.RowDefinitions>
+        <RowDefinition Height="220"/>
+        <RowDefinition Height="50"/>
+        <RowDefinition Height="70"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="*"/>
+        <RowDefinition Height="70"/>
+    </Grid.RowDefinitions>
+    
+        <Image  Source="imagejogo.png"
+                Aspect="AspectFill"
+                Grid.Row="0"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/>
+
+        <Frame  Background="#77FFFFFF"
+                CornerRadius="20"
+                BorderColor="#7516d9"
+                Grid.Row="2"
+                Grid.ColumnSpan="3">
+                
+        <Label  x:Name="labelPergunta"
+                HorizontalTextAlignment="Center"
+                Grid.Row="2"
+                Grid.ColumnSpan="3"
+                VerticalOptions="Center"
+                FontSize="13"
+                TextColor="Black"/>
+        </Frame>
+
+        <Label  x:Name="labelNivel"
+                Text="Nivel: 1"
+                HorizontalTextAlignment="Center"
+                Grid.Row="1"
+                Grid.Column="3"
+                FontSize="18"
+                TextColor="White"/>
+
+        <Label  x:Name="labelPontuacao"
+                Text="R$ 0"
+                HorizontalTextAlignment="Start"
+                FontSize="18"
+                Grid.Row="1"
+                Grid.ColumnSpan="2"
+                TextColor="White"/>
+
+        <Button x:Name="botao01"
+                Clicked="OnBtnResposta01Clicked"
+                BorderWidth="2"
+                TextColor="Black"
+                Margin="5,5,5,5"
+                FontSize="18"
+                BorderColor="White"
+                Grid.Row="3"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/>  
+    
+        <Button x:Name="botao02"
+                Clicked="OnBtnResposta02Clicked"
+                BorderWidth="2"
+                TextColor="Black"
+                Margin="5,5,5,5"
+                FontSize="18"
+                BorderColor="White"
+                Grid.Row="4"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/>
+
+        <Button x:Name="botao03"
+                Clicked="OnBtnResposta03Clicked"
+                BorderWidth="2"
+                TextColor="Black"
+                Margin="5,5,5,5"
+                FontSize="18"
+                BorderColor="White"
+                Grid.Row="5"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/> 
+
+        <Button x:Name="botao04"
+                Clicked="OnBtnResposta04Clicked"
+                BorderWidth="2"
+                TextColor="Black"
+                Margin="5,5,5,5"
+                FontSize="18"
+                BorderColor="White"
+                Grid.Row="6"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/>
+
+        <Button x:Name="botao05"
+                Clicked="OnBtnResposta05Clicked"
+                BorderWidth="2"
+                TextColor="Black" 
+                Margin="5,5,5,5"
+                FontSize="18"
+                BorderColor="White"
+                Grid.Row="7"
+                Grid.Column="0"
+                Grid.ColumnSpan="3"/> 
+    
+    
+        <Button Text ="Pular"
+                Clicked="Pular"
+                BorderWidth="2"
+                Padding =".12"
+                TextColor="Black"
+                BackgroundColor="#7916b8"
+                Margin="5,5,5,5"
+                FontSize="18"
+                BorderColor="White"
+                Grid.Row="8"
+                Grid.Column="0"/>
+
+        <Button Text="Retira 3"
+                x:Name="gustavo"
+                Clicked="Retira3"
+                BorderWidth="2"
+                Padding ="12"
+                TextColor="Black"
+                BackgroundColor="#7916b8"
+                Margin="5,5,5,5"
+                FontSize="18"
+                BorderColor="White"
+                Grid.Row="8"
+                Grid.Column="1"/>
+
+        <Button Text="Universitários"
+                BorderWidth="2"
+                Padding ="12"
+                TextColor="Black"
+                BackgroundColor="#7916b8"
+                Margin="5,5,5,5"
+                FontSize="18"
+                BorderColor="White"
+                Grid.Row="8"
+                Grid.Column="2"/>
+
+
+    
+    </Grid>
+
+</ContentPage>
